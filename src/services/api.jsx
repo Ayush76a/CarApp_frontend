@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://carapp-backend-czb0.onrender.com' });
+const API = axios.create({ baseURL: 'https://carapp-backend-czb0.onrender.com/api' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('token')) {
